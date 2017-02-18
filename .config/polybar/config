@@ -29,7 +29,7 @@ margin-bottom = 5
 ;monitor = ${env:MONITOR:HDMI-1}
 bottom = false
 width = 100%
-height = 27
+height = 24
 offset-x = 0
 offset-y = 0
 
@@ -386,7 +386,7 @@ exec = ~/.config/polybar/pkg.sh
 [module/redshift]
 type = custom/script
 interval = 5
-label = %{A1:~/.config/polybar/redshift2.sh:} %output:0:60:...% %{A}
+label = %{A1:~/.config/polybar/redshift2.sh:}%output:0:60:...%%{A}
 exec = ~/.config/polybar/redshift.sh
 format-underline=#ffb52a
 

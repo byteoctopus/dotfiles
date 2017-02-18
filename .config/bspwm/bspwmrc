@@ -62,4 +62,4 @@ bspc config initial_polarity first_child
 # Set up displays
 bspc monitor -d 1 2 3 4 5
 
-bspc config top_padding     28
+bspc config top_padding     24

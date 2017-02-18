@@ -1,0 +1,66 @@
+##### THIS FILE IS BEING CURRENTLY MANAGED BY URXVTCONFIG #####
+##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
+##### PROCEED WITH CAUTION! #####
+
+! special colors
+*.foreground:  #c3c7d1
+*.background:  #1e282c
+*.cursorColor:  #c3c7d1
+! black
+*.color0:      #006680
+*.color8:      #006680
+! red
+*.color1:      #eb606b
+*.color9:      #eb606b
+! green
+*.color2:      #c3e88d
+*.color10:     #c3e88d
+! yellow
+*.color3:      #f7eb95
+*.color11:     #f7eb95
+! blue
+*.color4:      #aeddff
+*.color12:     #aeddff
+! magenta
+*.color5:      #ff80bf
+*.color13:     #ff80bf
+! cyan
+*.color6:      #80cbc3
+*.color14:     #5d7789
+! white
+*.color7:      #ffffff
+*.color15:     #ffffff
+
+URxvt*scrollBar: false 
+URxvt*scrollBar_right: false 
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt*transparent:       false
+
+URxvt*depth: 32
+URxvt.background: [85]#1e282c
+
+URxvt.font: xft:Roboto Mono:pixelsize=15
+URxvt.letterSpace: 0
+
+*antialias:  true
+*autohint:   true
+
+! Clipboard
+URxvt.keysym.C-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard
+
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #be273238, #be273238, #be1e2529
+rofi.color-normal: #00273238, #c1c1c1, #00273238, #ae394249, #ffffff
+rofi.color-active: #00273238, #80cbc4, #00273238, #ae394249, #80cbc4
+rofi.color-urgent: #00273238, #ff1844, #00273238, #ae394249, #ff1844
+rofi.font: Roboto Mono 12
+rofi.width: 40
+rofi.hide-scrollbar: true

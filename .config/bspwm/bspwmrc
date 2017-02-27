@@ -2,8 +2,8 @@
 
 sxhkd &
 
+
 xautolock -detectsleep \
-          -notify  60 -notifier "xset dpms force off" \
           -time     5 -locker   "/usr/local/bin/lock -f Roboto" \
           -killtime 10 -killer   "systemctl suspend" &
 
@@ -12,14 +12,23 @@ compton --config ~/.compton.conf &
 
 ~/.config/polybar/launch.sh &
 
-~/.fehbg &&
 
-sleep .1 &&
+xrandr --dpi 96&
 
-/usr/local/bin/lock -f Roboto &
+dunst &
+
+xsetroot -cursor_name left_ptr &
+
+~/.fehbg &
+
+~/.config/bspwm/clipboard.sh &
+
+
+#/usr/local/bin/lock -f Roboto &
 
 
 #padding
+bspc config top_padding     24
 bspc config bottom_padding     0
 bspc config left_padding       0
 bspc config right_padding      0
@@ -45,8 +54,8 @@ bspc config normal_frame_opacity 0.75
 bspc config focused_frame_opacity 0.75
 
 # Multihead behavior
-bspc config remove_disabled_monitors true
-bspc config remove_unplugged_monitors true
+#bspc config remove_disabled_monitors true
+#bspc config remove_unplugged_monitors true
 
 # Focusing behavior
 bspc config focus_follows_pointer true
@@ -59,7 +68,5 @@ bspc config auto_alternate true
 bspc config auto_cancel true
 bspc config initial_polarity first_child
 
-# Set up displays
 bspc monitor -d 1 2 3 4 5
 
-bspc config top_padding     24

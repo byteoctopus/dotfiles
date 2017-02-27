@@ -46,7 +46,7 @@ scrollback_lines = 10000
 #background = rgba(63, 63, 63, 0.8)
 
 # If unset, will reverse foreground and background
-highlight = #2f2f2f
+#highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
 #color0 = #3f3f3f
@@ -69,7 +69,7 @@ highlight = #2f2f2f
 
 foreground=  #c3c7d1
 foreground_bold = #c3c7d1
-background=  rgba(30, 40, 44, .9)
+background=  rgba(30, 40, 44, .95)
 #cursor = #c3c7d1
 #cursor_foreground = #c3c7d1
 #black
@@ -96,6 +96,47 @@ color14=     #5d7789
 #white
 color7=      #ffffff
 color15=     #ffffff
+
+## special
+#foreground      = #c5c8c6
+#foreground_bold = #c5c8c6
+#cursor          = #c5c8c6
+#background      = #1d1f21
+
+## black
+#color0  = #282a2e
+#color8  = #373b41
+
+## red
+#color1  = #a54242
+#color9  = #cc6666
+
+## green
+#color2  = #8c9440
+#color10 = #b5bd68
+
+## yellow
+#color3  = #de935f
+#color11 = #f0c674
+
+## blue
+#color4  = #5f819d
+#color12 = #81a2be
+
+## magenta
+#color5  = #85678f
+#color13 = #b294bb
+
+## cyan
+#color6  = #5e8d87
+#color14 = #8abeb7
+
+## white
+#color7  = #707880
+#color15 = #c5c8c6
+
+
+
 
 
 

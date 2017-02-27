@@ -87,3 +87,6 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export LC_MESSAGES="C"
 export LC_ALL=en_US.UTF-8
+
+
+alias optirun="vblank_mode=0 PRIMUS_SYNC=1 optirun"

@@ -1,7 +1,7 @@
 
 [colors]
-background = #be1e282c
-background-alt = #be1e282c
+background = #ce1e282c
+background-alt = #ce1e282c
 foreground = #f3f4f5
 foreground-alt = #f3f4f5
 foreground-dim = #676e7d
@@ -26,7 +26,7 @@ margin-top = 5
 margin-bottom = 5
 
 [bar/main]
-;monitor = ${env:MONITOR:HDMI-1}
+;monitor = eDP1
 bottom = false
 width = 100%
 height = 24
@@ -61,11 +61,11 @@ modules-right =   volume xbacklight  redshift pkg  filesystem  memory cpu temper
 ;systemRoot systemHome s
 
 ;tray_output none
-tray-position = center
-tray-detached = true
+tray-position = right
+;tray-detached = true
 tray-padding = 2
-;tray-transparent = true
-tray-background = ${colors.background}
+tray-transparent = false
+;tray-background = #be1e282c
 
 wm-restack = bspwm
 ;wm-restack = i3

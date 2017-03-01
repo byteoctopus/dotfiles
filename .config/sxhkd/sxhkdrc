@@ -172,11 +172,11 @@ super + c
 #
 # Alsa controls
 XF86AudioRaiseVolume 
-	amixer set Master 5%+
+	pulsemixer --change-volume +5
 XF86AudioLowerVolume 
-	amixer set Master 5%-
+	pulsemixer --change-volume -5
 XF86AudioMute 
-	amixer set Master toggle
+	pulsemixer --toggle-mute
 
 # Sreen brightness controls
 XF86MonBrightnessUp 

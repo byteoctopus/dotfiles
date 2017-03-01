@@ -101,7 +101,7 @@ color15=     #ffffff
 #foreground      = #c5c8c6
 #foreground_bold = #c5c8c6
 #cursor          = #c5c8c6
-#background      = #1d1f21
+#background      = rgba(29, 31, 33,.9)
 
 ## black
 #color0  = #282a2e
@@ -112,8 +112,8 @@ color15=     #ffffff
 #color9  = #cc6666
 
 ## green
-#color2  = #8c9440
-#color10 = #b5bd68
+#color10  = #8c9440
+#color2 = #b5bd68
 
 ## yellow
 #color3  = #de935f

@@ -5,7 +5,8 @@ sxhkd &
 
 xautolock -detectsleep \
           -time     5 -locker   "/usr/local/bin/lock -f Roboto" \
-          -killtime 10 -killer   "systemctl suspend" &
+          -killtime 10 -killer   "systemctl suspend" \
+          -corners -000 &
 
 compton --config ~/.compton.conf &
 

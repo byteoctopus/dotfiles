@@ -1,7 +1,7 @@
 
 [colors]
-background = #ce1e282c
-background-alt = #ce1e282c
+background = #be1e282c
+background-alt = #be1e282c
 foreground = #f3f4f5
 foreground-alt = #f3f4f5
 foreground-dim = #676e7d
@@ -45,7 +45,7 @@ margin-bottom = 5
 ;monitor = eDP1
 bottom = false
 width = 100%
-height = 24
+height = 22
 offset-x = 0
 offset-y = 0
 
@@ -73,7 +73,7 @@ font-5 = Material Icons:pixelsize=10:antialias=true;2
 
 modules-left =   bspwm  xwindow 
 modules-center =  music 
-modules-right =   xbacklight pulse redshift pkg  filesystem  memory cpu temperature battery wlan eth date
+modules-right =   volume pkg  filesystem  memory cpu temperature battery wlan date
 ;systemRoot systemHome s
 
 ;tray_output none
@@ -249,7 +249,7 @@ label-connected = %essid%
 ;format-disconnected =
 ;format-disconnected = <label-disconnected>
 format-disconnected-underline = ${self.format-connected-underline}
-label-disconnected = %ifname% disconnected
+label-disconnected = 
 ;label-disconnected-foreground = ${colors.foreground-alt}
 ramp-signal-0 = 
 ramp-signal-1 = 

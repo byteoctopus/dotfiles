@@ -43,8 +43,14 @@ URxvt.background: [85]#1e282c
 URxvt.font: xft:Roboto Mono:pixelsize=15
 URxvt.letterSpace: 0
 
-*antialias:  true
-*autohint:   true
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
 
 ! Clipboard
 URxvt.keysym.C-C: perl:clipboard:copy

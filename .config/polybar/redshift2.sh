@@ -5,7 +5,9 @@
 
 pgrep -x redshift &> /dev/null
 if [[ $? -eq 0 ]]; then
-	exec systemctl --user stop redshift
+	notify-send -t 6 --icon=info "RedShift" "Off"
+  	redshift -x && killall redshift
 else
-	exec systemctl --user start redshift
+	notify-send -t 6 --icon=info "RedShift" "On"
+  	redshift >/dev/null 2>&1 & disown
 fi

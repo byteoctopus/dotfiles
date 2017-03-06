@@ -2,9 +2,11 @@
 
 sxhkd &
 
+sleep 1; xset -dpms &
 
 xautolock -detectsleep \
-          -time     5 -locker   "/usr/local/bin/lock -f Roboto" \
+		  -notify 120 -notifier "xset dpms force off" \
+          -time     5 -locker   "i3lock-fancy -f Roboto" \
           -killtime 10 -killer   "systemctl suspend" \
           -corners -000 &
 
@@ -22,14 +24,16 @@ xsetroot -cursor_name left_ptr &
 
 ~/.fehbg &
 
-~/.config/bspwm/clipboard.sh &
+systemctl --user start greenclip.service &
+
+parcellite -n &
 
 
 #/usr/local/bin/lock -f Roboto &
 
 
 #padding
-bspc config top_padding     24
+bspc config top_padding     22
 bspc config bottom_padding     0
 bspc config left_padding       0
 bspc config right_padding      0

@@ -1,4 +1,4 @@
-#
+P#
 # wm independent hotkeys
 #
 
@@ -21,13 +21,25 @@ super + Escape
 super + p
 	~/.config/bspwm/shutdown.sh
 
+#network menu
+super + shift + w
+	networkmanager_dmenu
+
 #clipboard
 alt + c
 	rofi -modi "clipboard:greenclip print" -show clipboard
 
+#xdg-open
+super + shift + f
+	xdg-open $(locate / | rofi -dmenu -i -p "locate:")
+
+#redshift
+ctrl + alt + r
+	~/.config/polybar/redshift2.sh
+
 #lock
 super + o
-	/usr/local/bin/lock -f Roboto
+	i3lock-fancy -f Roboto
 
 #restart bar
 super + shift + r
@@ -172,23 +184,23 @@ super + c
 #
 # Alsa controls
 XF86AudioRaiseVolume 
-	pulsemixer --change-volume +5
+	pulsemixer --change-volume +2
 XF86AudioLowerVolume 
-	pulsemixer --change-volume -5
+	pulsemixer --change-volume -2
 XF86AudioMute 
 	pulsemixer --toggle-mute
 
 # Sreen brightness controls
 XF86MonBrightnessUp 
-	xbacklight -inc 5 # increase screen brightness
+	light -A 5% # increase screen brightness
 XF86MonBrightnessDown 
-	xbacklight -dec 5 # decrease screen brightness
+	light -U 5%  # decrease screen brightness
 
 # Media player controls
 XF86AudioPlay 
-	playerctl play
+	playerctl play-pause 
 XF86AudioPause 
-	playerctl pause
+	playerctl play-pause 
 XF86AudioNext 
 	playerctl next
 XF86AudioPrev 

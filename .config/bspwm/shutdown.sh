@@ -116,7 +116,7 @@ menu=(
   [Hibernate]="systemctl hibernate"
   [Suspend]="systemctl suspend"
   [Halt]="systemctl halt"
-  [Lock]="${LOCKSCRIPT:-i3lock -i ~/Pictures/wallpaper.png -c '#000000' -o '#191d0f' -w '#572020' -l '#ffffff' -e}"
+  [Lock]="${LOCKSCRIPT:-i3lock-fancy -f Roboto-Medium}"
   [Logout]="bspc quit"
   [Cancel]=""
 )

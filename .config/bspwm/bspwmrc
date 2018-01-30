@@ -6,7 +6,7 @@ sleep 1; xset -dpms &
 
 xautolock -detectsleep \
 		  -notify 120 -notifier "xset dpms force off" \
-          -time     5 -locker   "i3lock-fancy -f Roboto" \
+          -time     5 -locker   "i3lock-fancy -f Roboto-Medium" \
           -killtime 10 -killer   "systemctl suspend" \
           -corners -000 &
 
@@ -27,6 +27,8 @@ xsetroot -cursor_name left_ptr &
 systemctl --user start greenclip.service &
 
 parcellite -n &
+
+~/.config/bspwm/java_nonreparenting_wm_hack.sh &
 
 
 #/usr/local/bin/lock -f Roboto &

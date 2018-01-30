@@ -90,3 +90,6 @@ export LC_ALL=en_US.UTF-8
 
 
 alias optirun="vblank_mode=0 PRIMUS_SYNC=1 optirun"
+
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"

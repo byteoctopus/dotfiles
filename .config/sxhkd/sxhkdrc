@@ -23,7 +23,7 @@ super + p
 
 #network menu
 super + shift + w
-	networkmanager_dmenu
+	/usr/bin/networkmanager_dmenu
 
 #clipboard
 alt + c
@@ -39,7 +39,7 @@ ctrl + alt + r
 
 #lock
 super + o
-	i3lock-fancy -f Roboto
+	i3lock-fancy -f Roboto-Medium
 
 #restart bar
 super + shift + r

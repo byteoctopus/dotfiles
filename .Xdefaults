@@ -2,34 +2,43 @@
 ##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
 ##### PROCEED WITH CAUTION! #####
 
-! special colors
-*.foreground:  #c3c7d1
-*.background:  #1e282c
+! special
+*.foreground:   #c3c7d1
+*.background:   #000000
 *.cursorColor:  #c3c7d1
+
 ! black
-*.color0:      #006680
-*.color8:      #006680
+*.color0:       #006680
+*.color8:       #006680
+
 ! red
-*.color1:      #eb606b
-*.color9:      #eb606b
+*.color1:       #eb606b
+*.color9:       #eb606b
+
 ! green
-*.color2:      #c3e88d
-*.color10:     #c3e88d
+*.color2:       #c3e88d
+*.color10:      #c3e88d
+
 ! yellow
-*.color3:      #f7eb95
-*.color11:     #f7eb95
+*.color3:       #f7eb95
+*.color11:      #f7eb95
+
 ! blue
-*.color4:      #aeddff
-*.color12:     #aeddff
+*.color4:       #aeddff
+*.color12:      #aeddff
+
 ! magenta
-*.color5:      #ff80bf
-*.color13:     #ff80bf
+*.color5:       #ff80bf
+*.color13:      #ff80bf
+
 ! cyan
-*.color6:      #80cbc3
-*.color14:     #5d7789
+*.color6:       #80cbc3
+*.color14:      #5d7789
+
 ! white
-*.color7:      #ffffff
-*.color15:     #ffffff
+*.color7:       #ffffff
+*.color15:      #ffffff
+
 
 URxvt*scrollBar: false 
 URxvt*scrollBar_right: false 

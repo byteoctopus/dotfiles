@@ -51,7 +51,7 @@ ZSH_THEME="omega-minimal"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search colored-man-pages)
+plugins=(git history-substring-search colored-man-pages yay)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,8 +88,13 @@ export LANG=en_US.UTF-8
 export LC_MESSAGES="C"
 export LC_ALL=en_US.UTF-8
 
+eval "$(dircolors ~/.dircolors)"
 
 alias optirun="vblank_mode=0 PRIMUS_SYNC=1 optirun"
+alias mpd="systemctl --user start mopidy.service"
+alias mpdstop="systemctl --user stop mopidy.service"
+
+alias tmux="TERM=xterm-256color tmux"
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"

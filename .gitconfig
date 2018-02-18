@@ -1,0 +1,14 @@
+[core]
+	excludesfile = /home/nick/.gitignore
+	
+[user]
+	name = Nick Mariam
+	email = nmariam@umich.edu
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true

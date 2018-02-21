@@ -114,9 +114,9 @@ menu=(
   [Shutdown]="systemctl poweroff"
   [Reboot]="systemctl reboot"
   [Hibernate]="systemctl hibernate"
-  [Suspend]="systemctl suspend"
+  [Suspend]="betterlockscreen -s"
   [Halt]="systemctl halt"
-  [Lock]="${LOCKSCRIPT:-i3lock-fancy -f Roboto-Medium}"
+  [Lock]="betterlockscreen -l"
   [Logout]="bspc quit"
   [Cancel]=""
 )

@@ -27,8 +27,7 @@ super + shift + w
 
 #clipboard
 alt + c
-	rofi -modi "clipboard:greenclip print" -show clipboard
-
+        rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 #xdg-open
 super + shift + f
 	xdg-open $(locate / | rofi -dmenu -i -p "locate:")
@@ -39,7 +38,7 @@ ctrl + alt + r
 
 #lock
 super + o
-	i3lock-fancy -f Roboto-Medium
+	betterlockscreen -l
 
 #restart bar
 super + shift + r

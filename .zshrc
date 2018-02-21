@@ -9,14 +9,11 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/git
     zgen oh-my-zsh plugins/history-substring-search
     zgen oh-my-zsh plugins/colored-man-pages
-    zgen oh-my-zsh ~/.misc/omega-minimal.zsh-theme
-
-
+    zgen load chriskempson/base16-shell
+    zgen load ~/.misc/omega-minimal.zsh-theme
     # generate the init script from plugins above
     zgen save
 fi
-
-source ~/.misc/omega-minimal.zsh-theme
 
 export LANG=en_US.UTF-8
 export LC_MESSAGES="C"
@@ -28,4 +25,4 @@ alias optirun="vblank_mode=0 PRIMUS_SYNC=1 optirun"
 alias mpd="systemctl --user start mopidy.service"
 alias mpdstop="systemctl --user stop mopidy.service"
 
-alias tmux="TERM=xterm-256color tmux"
+#alias tmux="TERM=xterm-256color tmux"

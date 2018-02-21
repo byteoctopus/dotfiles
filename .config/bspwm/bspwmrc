@@ -6,8 +6,8 @@ sleep 1; xset -dpms &
 
 xautolock -detectsleep \
 		  -notify 120 -notifier "xset dpms force off" \
-          -time     5 -locker   "i3lock-fancy -f Roboto-Medium" \
-          -killtime 10 -killer   "systemctl suspend" \
+          -time     5 -locker   "betterlockscreen -l" \
+          -killtime 10 -killer   "betterlockscreen -s" \
           -corners -000 &
 
 compton -CG --config ~/.compton.conf &

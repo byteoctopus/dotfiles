@@ -2,52 +2,54 @@
 ##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
 ##### PROCEED WITH CAUTION! #####
 
+
+
 ! special
-*.foreground:   #c3c7d1
-*.background:   #000000
-*.cursorColor:  #c3c7d1
+*.foreground:   #bbc5ff
+*.background:   #292d3e
+*.cursorColor:  #bbc5ff
 
 ! black
-*.color0:       #006680
-*.color8:       #006680
+*.color0:       #292d3e
+*.color8:       #434758
 
 ! red
-*.color1:       #eb606b
-*.color9:       #eb606b
+*.color1:       #f07178
+*.color9:       #ff8b92
 
 ! green
 *.color2:       #c3e88d
-*.color10:      #c3e88d
+*.color10:      #ddffa7
 
 ! yellow
-*.color3:       #f7eb95
-*.color11:      #f7eb95
+*.color3:       #ffcb6b
+*.color11:      #ffe585
 
 ! blue
-*.color4:       #aeddff
-*.color12:      #aeddff
+*.color4:       #82aaff
+*.color12:      #9cc4ff
 
 ! magenta
-*.color5:       #ff80bf
-*.color13:      #ff80bf
+*.color5:       #c792ea
+*.color13:      #e1acff
 
 ! cyan
-*.color6:       #80cbc3
-*.color14:      #5d7789
+*.color6:       #89ddff
+*.color14:      #a3f7ff
 
 ! white
-*.color7:       #ffffff
+*.color7:       #d0d0d0
 *.color15:      #ffffff
 
 
+!URxvt*jumpScroll: false
 URxvt*scrollBar: false 
 URxvt*scrollBar_right: false 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
-URxvt*transparent:       false
+!URxvt*transparent:       false
 
-URxvt*depth: 32
-URxvt.background: [85]#1e282c
+URxvt.depth: 24
 
 URxvt.font: xft:Roboto Mono:pixelsize=15
 URxvt.letterSpace: 0
@@ -62,10 +64,10 @@ Xft.rgba: rgb
 
 
 ! Clipboard
-URxvt.keysym.C-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.iso14755: False
-URxvt.perl-ext-common: default,clipboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 
 
 ! ------------------------------------------------------------------------------
@@ -79,3 +81,9 @@ rofi.color-urgent: #00273238, #ff1844, #00273238, #ae394249, #ff1844
 rofi.font: Roboto Mono 12
 rofi.width: 40
 rofi.hide-scrollbar: true
+
+
+xterm*letterspace:0 
+xterm*faceName: xft:Roboto Mono:spacing=mono
+xterm*faceSize: 11
+xterm*renderFont: true
